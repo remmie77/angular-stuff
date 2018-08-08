@@ -1,0 +1,24 @@
+{
+  "name": "angular-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remmie77/angular-stuff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remmie77/angular-stuff/issues"
+  },
+  "homepage": "https://github.com/remmie77/angular-stuff#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3"
+  }
+}
