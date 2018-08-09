@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>angular intro</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="client.js"></script>
+</head>
+<!-- ng-app is telling angular 'you have controll within this element' -->
+<!-- "myApp" is the NAME of the App. it also has to match the name of the module in client.js -->
+<body ng-app="myApp">
+<!-- angular is in controll of the whole page, and the controller is in controll of this div (can have multiple controllers) -->
+<!-- this vm is the nickname for WelcomeController controller and must match up with argument in client.js -->
+    <div ng-controller="WelcomeController as vm">
+        <h1>Polaris NG Intro</h1>
+<!--ng-model="intro" is naming a variable (a model is a variable) a directive -->
+        <input type="text" ng-model="intro"/>
+<!-- anything within the two curlies will be evaluated (intro was declared above)-->
+        {{'ok we can concat man: ' + intro}}
+        <h3>{{4 + 2}}</h3>
+<!-- since there is a two-way bind vm.message is the same as self.message in client.js -->
+        <p>{{vm.message}}</p>
+    </div>
+
+
+    <div>
+    </div>
+    <div>
+        
+    </div>
+    <div>
+    </div>
+   
+
+
+</body>
+
+</html>
